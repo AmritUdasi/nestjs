@@ -12,5 +12,5 @@ export class AppController {
   @Get('contract')
   finddata(@Body('token_id') tokenid:string,@Body('contract_address') contractaddress:string){
     return this.appService.finddata(tokenid,contractaddress);
-  }
+  }   
   }
