@@ -1,6 +1,7 @@
 import { Injectable,Inject,CACHE_MANAGER } from '@nestjs/common';
 import { Cache } from 'cache-manager'
 import axios from 'axios'; 
+
 @Injectable()
 export class AppService {
   constructor(@Inject(CACHE_MANAGER) private readonly cacheManager:Cache){}

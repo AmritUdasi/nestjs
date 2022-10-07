@@ -6,6 +6,7 @@ import {InjectRepository} from '@nestjs/typeorm'
 import { CreateDetailsDto } from "./dto/create-detail.dto";
 import { DetailsDto } from "./dto/Details.dto";
 import axios from 'axios'
+
 @Injectable()
 export class DetailsService {
     constructor( @InjectRepository(Details) private readonly DetailRepository:Repository<Details>){}
